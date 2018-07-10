@@ -1,0 +1,28 @@
+{
+    "name": "booking_front",
+    "version": "1.0.0",
+    "description": "booking front",
+    "dependencies": {
+        "angular": "1.6.5",
+        "angular-ui-router": "1.0.18",
+        "animate.css": "^3.6.1",
+        "font-awesome": "4.7.0",
+        "gulp": "3.9.1",
+        "gulp-concat": "2.6.1",
+        "gulp-concat-css": "3.1.0",
+        "gulp-htmlmin": "^4.0.0",
+        "gulp-uglify": "3.0.0",
+        "oclazyload": "1.1.0"
+    },
+    "devDependencies": {
+        "gulp-cssmin": "^0.2.0",
+        "require-dir": "1.0.0"
+    },
+    "scripts": {
+        "compile": "npm update && gulp css && gulp js && gulp js-lib && gulp tpl",
+        "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite --baseDir ./compile --port 8008\" ",
+        "lite": "lite-server"
+    },
+    "author": "maxim",
+    "license": "ISC"
+}

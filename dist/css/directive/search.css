@@ -1,0 +1,58 @@
+/** -------- input -------- */
+
+.input-container {
+  position: relative;
+  width: 100%;
+  height: 32px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.input-container .input-addon {
+  display: inline-block;
+  width: 32px;
+  vertical-align: middle;
+  text-align: center;
+  color: #6d6d6d;
+}
+
+.input-container input {
+  display: inline;
+  width: calc(100% - 32px);
+  height: 100%;
+  border: none;
+}
+
+.input-container input:focus {
+  outline: none;
+}
+
+/** -------- input helpers -------- */
+
+.input-container .helpers {
+  position: absolute;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.input-container .helpers .helper {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.input-container .helpers .helper:last-child {
+  border-bottom: none;
+}
+
+.input-container .helpers .helper:hover {
+  cursor: pointer;
+  background-color: #f6f6f6;
+}
+
+.input-container .helpers .helper span {
+  display: block;
+  padding: 5px;
+}

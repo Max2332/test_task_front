@@ -1,0 +1,26 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/** -------- container -------- */
+
+.full-screen {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.full-screen .center-block {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+.full-screen .center-block .content {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+

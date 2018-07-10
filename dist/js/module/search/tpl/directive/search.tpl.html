@@ -1,0 +1,12 @@
+<div class="input-container">
+         <span class="input-addon">
+          <i class="fa fa-search"></i>
+        </span>
+    <input type="text" placeholder="Enter text" ng-blur="clearHelpers()" ng-model="searchResult"
+           ng-keyup="search()">
+    <div class="helpers fadeIn" ng-if="helpers.length > 0">
+        <div class="helper" ng-repeat="helper in helpers">
+            <span ng-mousedown="setHelper(helper)">{{ helper.description }}</span>
+        </div>
+    </div>
+</div>

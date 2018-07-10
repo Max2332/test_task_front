@@ -1,0 +1,3 @@
+app.constant('$urlConst', {
+    api: 'http://localhost:8084'
+});
